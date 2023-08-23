@@ -37,3 +37,19 @@ list.c:64:6: error: ‘pushBack’ defined but not used [-Werror=unused-function
 cc1: all warnings being treated as errors
 Compilation failed
 d37dcdc
+Wed 23 Aug 2023 09:54:56 PM UTC: 
+ list.c | 5 +----
+ 1 file changed, 1 insertion(+), 4 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘createList’:
+list.c:35:4: error: ‘List’ {aka ‘struct List’} has no member named ‘primero’
+   35 |   L->primero = NULL;
+      |    ^~
+list.c:36:4: error: ‘List’ {aka ‘struct List’} has no member named ‘ultimo’
+   36 |   L->ultimo = NULL;
+      |    ^~
+list.c:37:4: error: ‘List’ {aka ‘struct List’} has no member named ‘tamano’
+   37 |   L->tamano = 0;
+      |    ^~
+Compilation failed
+7b00add

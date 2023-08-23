@@ -29,16 +29,13 @@ Node * createNode(void * data) {
 }
 
 List * createList() {
-  List* createList() {
-  // Reservar memoria para el puntero de tipo List
   List* L = (List*) malloc(sizeof(List));
 
-  // Inicializar los valores en NULL
+
   L->primero = NULL;
   L->ultimo = NULL;
   L->tamano = 0;
 
-  // Retornar el puntero
   return L;
 }
 
