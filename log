@@ -1,0 +1,39 @@
+Wed 23 Aug 2023 09:54:33 PM UTC: 
+ list.c | 12 +++++++++++-
+ 1 file changed, 11 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘createList’:
+list.c:37:4: error: ‘List’ {aka ‘struct List’} has no member named ‘primero’
+   37 |   L->primero = NULL;
+      |    ^~
+list.c:38:4: error: ‘List’ {aka ‘struct List’} has no member named ‘ultimo’
+   38 |   L->ultimo = NULL;
+      |    ^~
+list.c:39:4: error: ‘List’ {aka ‘struct List’} has no member named ‘tamano’
+   39 |   L->tamano = 0;
+      |    ^~
+test.c: In function ‘createList’:
+test.c:448:5: error: ‘main’ is normally a non-static function [-Werror=main]
+  448 | int main( int argc, char *argv[] ) {
+      |     ^~~~
+test.c:468:1: error: expected declaration or statement at end of input
+  468 | }
+      | ^
+test.c:469: error: control reaches end of non-void function [-Werror=return-type]
+At top level:
+test.c:448:5: error: ‘main’ defined but not used [-Werror=unused-function]
+  448 | int main( int argc, char *argv[] ) {
+      |     ^~~~
+In file included from test.c:5:
+list.c:86:6: error: ‘cleanList’ defined but not used [-Werror=unused-function]
+   86 | void cleanList(List * list) {
+      |      ^~~~~~~~~
+list.c:77:8: error: ‘popBack’ defined but not used [-Werror=unused-function]
+   77 | void * popBack(List * list) {
+      |        ^~~~~~~
+list.c:64:6: error: ‘pushBack’ defined but not used [-Werror=unused-function]
+   64 | void pushBack(List * list, void * data) {
+      |      ^~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+d37dcdc
