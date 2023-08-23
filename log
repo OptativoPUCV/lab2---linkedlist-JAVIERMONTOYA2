@@ -64,3 +64,9 @@ list.c:45:10: error: ‘L’ undeclared (first use in this function)
 list.c:45:10: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 74c9327
+Wed 23 Aug 2023 09:57:56 PM UTC: 
+ list.c | 2 --
+ 1 file changed, 2 deletions(-)
+ tests:  1|5
+total_score: 10/70
+a5dd90d

@@ -41,8 +41,6 @@ List * createList() {
     list->current = NULL;
     // Retornar el puntero a la lista
     return list;
-
-  return L;
 }
 
 void * firstList(List * list) {
