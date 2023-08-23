@@ -29,12 +29,18 @@ Node * createNode(void * data) {
 }
 
 List * createList() {
-  List* L = (List*) malloc(sizeof(List));
-
-
-  L->primero = NULL;
-  L->ultimo = NULL;
-  L->tamano = 0;
+  List* list = (List*) malloc(sizeof(List));
+    // Verificar si la memoria fue asignada correctamente
+    if (list == NULL) {
+        printf("Error: no se pudo reservar memoria para la lista\n");
+        return NULL;
+    }
+    // Inicializar los valores de la lista en NULL
+    list->head = NULL;
+    list->tail = NULL;
+    list->current = NULL;
+    // Retornar el puntero a la lista
+    return list;
 
   return L;
 }

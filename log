@@ -53,3 +53,14 @@ list.c:37:4: error: ‘List’ {aka ‘struct List’} has no member named ‘ta
       |    ^~
 Compilation failed
 7b00add
+Wed 23 Aug 2023 09:57:47 PM UTC: 
+ list.c | 18 ++++++++++++------
+ 1 file changed, 12 insertions(+), 6 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘createList’:
+list.c:45:10: error: ‘L’ undeclared (first use in this function)
+   45 |   return L;
+      |          ^
+list.c:45:10: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+74c9327
