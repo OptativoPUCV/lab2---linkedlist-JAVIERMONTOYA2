@@ -30,10 +30,10 @@ Node * createNode(void * data) {
 
 List * createList() {
   List* list = (List*) malloc(sizeof(List));
-    //if (list == NULL) {
-    //    printf("Error: no se pudo reservar memoria para la lista\n");
-    //    return NULL;
-    //}
+    if (list == NULL) {
+       printf("Error: no se pudo reservar memoria para la lista\n");
+        return NULL;
+    }
     
     list->head = NULL;
     list->tail = NULL;
