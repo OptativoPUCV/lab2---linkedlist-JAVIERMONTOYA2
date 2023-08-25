@@ -30,10 +30,10 @@ Node * createNode(void * data) {
 
 List * createList() {
   List* list = (List*) malloc(sizeof(List));
-    if (list == NULL) {
-        printf("Error: no se pudo reservar memoria para la lista\n");
-        return NULL;
-    }
+    //if (list == NULL) {
+    //    printf("Error: no se pudo reservar memoria para la lista\n");
+    //    return NULL;
+    //}
     
     list->head = NULL;
     list->tail = NULL;
@@ -111,7 +111,7 @@ void pushBack(List * list, void * data) {
     list->tail->next = node;
     list->tail = node;
   }
-    //pushCurrent(list,data);
+    
 }
 
 void pushCurrent(List * list, void * data) {
